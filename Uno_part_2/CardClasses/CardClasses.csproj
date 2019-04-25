@@ -45,6 +45,9 @@
     <Compile Include="CardEventArgs.cs" />
     <Compile Include="CardOutOfRangeException.cs" />
     <Compile Include="Cards.cs" />
+    <Compile Include="PlayerEventArgs.cs" />
+    <Compile Include="PlayerState.cs" />
+    <Compile Include="RegularPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

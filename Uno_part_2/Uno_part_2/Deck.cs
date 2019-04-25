@@ -27,7 +27,7 @@ namespace Uno_part_2
             for (int i = Cards.Count-1; i > 0; --i)
             {
                 int n = r.Next(i + 1);
-                Card temp = cardshuffle[i];
+                Cards temp = cardshuffle[i];
                 cardshuffle[i] = cardshuffle[n];
                 cardshuffle[n] = temp;
             }
