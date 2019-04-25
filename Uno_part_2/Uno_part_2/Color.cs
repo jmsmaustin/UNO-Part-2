@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Uno_part_2
+namespace Card
 {
-    class Color
+    public enum Color
     {
+        Blue,
+        Red,
+        Green,
+        yellow
+
     }
 }
