@@ -41,14 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card1.cs" />
+    <Compile Include="Card.cs" />
     <Compile Include="CardEventArgs.cs" />
     <Compile Include="CardOutOfRangeException.cs" />
     <Compile Include="Cards.cs" />
-    <Compile Include="PlayerEventArgs.cs" />
-    <Compile Include="PlayerState.cs" />
-    <Compile Include="RegularPlayer.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="ComputerPlayer.cs" />
+    <Compile Include="Deck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rank.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
