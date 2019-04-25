@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace CardClasses
 {
-    [Serializable]
-    public enum PlayerState
+    class PlayerState
     {
-        
-        Winner,
-        MustDraw,
-        Loser,
     }
 }

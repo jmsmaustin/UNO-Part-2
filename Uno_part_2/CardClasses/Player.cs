@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CardClasses
 {
-    class PlayerEventArgs
+    class Player
     {
     }
 }
