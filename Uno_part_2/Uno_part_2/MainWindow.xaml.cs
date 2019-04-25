@@ -24,5 +24,6 @@ namespace Uno_part_2
         {
             InitializeComponent();
         }
+        
     }
 }

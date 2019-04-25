@@ -11,7 +11,7 @@ namespace Uno_part_2
         public readonly Rank rank;
         public readonly Color color;
 
-        public static bool useTrumps = flase;
+        public static bool useTrumps = false;
 
         public static Color trump = ConsoleC
     }
