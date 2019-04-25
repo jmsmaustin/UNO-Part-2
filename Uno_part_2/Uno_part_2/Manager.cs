@@ -10,6 +10,6 @@ namespace Uno_part_2
     {
         public List<Player> Player { get; set; }
         public  Deck Drawdeck { get; set; }
-        public List<Card> DiscardPile { get; set; }
+        public List<Cards> DiscardPile { get; set; }
     }
 }

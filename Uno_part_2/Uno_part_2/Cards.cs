@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace Uno_part_2
 {
-    public class Cards : List<Card>, ICloneable
+    public class Cards : List<Cards>, ICloneable
     {
         public void CopyTo(Cards targetCards)
         {
             for (int index = 0; index < this.Count; index++)
             {
-                targetCards[index] = this[index]
+                targetCards[index] = this[index];
             }
         }
 
         public object Clone()
         {
             Cards newCards = new Cards();
-            foreach (Card sourceCard in this)
+            foreach (Cards sourceCard in this)
             {
-                newCards.Add((Card)sourceCard.Clone());
+                newCards.Add((Cards)sourceCard.Clone());
             }
 
             return newCards;
