@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Uno_part_2
+namespace CardClasses
 {
     public delegate void LastCardDrawnHandler(Deck currentDeck);
     public class Deck : ICloneable

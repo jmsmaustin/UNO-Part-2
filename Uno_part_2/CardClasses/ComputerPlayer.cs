@@ -8,6 +8,13 @@ namespace CardClasses
 {
     public class ComputerPlayer  : Player
     {
+        private Random random = new Random();
 
+        public override string PlayerName => $"Computer {Index}";
+
+        public void Draw(Deck deck, Card availableCard)
+        {
+            DrawCard(deck);
+        }
     }
 }
