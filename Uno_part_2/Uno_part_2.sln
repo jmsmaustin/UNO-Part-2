@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uno_part_2", "Uno_part_2\Uno_part_2.csproj", "{24128B2F-B82A-40F2-99AA-32AF480DDF54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardClasses", "CardClasses\CardClasses.csproj", "{86E7A044-8F94-4301-B698-7C7E3F53F90B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{24128B2F-B82A-40F2-99AA-32AF480DDF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24128B2F-B82A-40F2-99AA-32AF480DDF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24128B2F-B82A-40F2-99AA-32AF480DDF54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E7A044-8F94-4301-B698-7C7E3F53F90B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E7A044-8F94-4301-B698-7C7E3F53F90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E7A044-8F94-4301-B698-7C7E3F53F90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E7A044-8F94-4301-B698-7C7E3F53F90B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
