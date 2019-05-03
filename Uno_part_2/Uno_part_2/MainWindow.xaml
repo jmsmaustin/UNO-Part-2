@@ -6,7 +6,32 @@
         xmlns:local="clr-namespace:Uno_part_2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-         
+    
+    
+    <Grid Background="Green">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition />
+            <RowDefinition Height="42"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Style="{StaticResource HeaderLabelStyle}">UNO</Label>
+        <Grid x:Name="contentGrid" Grid.Row="2" />
+        <Menu Grid.Row="1" Margin="0" Style="{StaticResource MainMenuStyle}">
+            <MenuItem Header="_File" Style="{StaticResource MainMenuItemStyle}">
+                <MenuItem Header="_New Game" Style="{StaticResource MainMenuSubMenutItemStyle}" Command="local:GameViewModel.StartGameCommand"/>
+                <MenuItem Header="_Open" Style="{StaticResource MainMenuSubMenuItemStyle}"/>
+                <MenuItem Header="_Save" Style="{StaticResource MainMenuSubMenuItemStyle}" Command="Save">
+                    <MenuItem.Icon>
+                    <Image Source="Images\base_floppydisk_32.png" Width="20" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator Style="{StaticResource MenuItemSeparatorStyle}" />
+                <MenuItem Header="_Close" Style="{StaticResource MainMenuSubMeuItemStyle}" Command="Close" />
+            </MenuItem>
+            
+
+        </Menu>
+
     </Grid>
 </Window>

@@ -57,6 +57,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameOptions.cs" />
+    <Compile Include="GameViewModel.cs" />
+    <Compile Include="InversedBoolConverter.cs" />
+    <Compile Include="NoOfPlayers.cs" />
     <Compile Include="StartGame.xaml.cs">
       <DependentUpon>StartGame.xaml</DependentUpon>
     </Compile>
@@ -117,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardClasses\CardClasses.csproj">
+      <Project>{86E7A044-8F94-4301-B698-7C7E3F53F90B}</Project>
+      <Name>CardClasses</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

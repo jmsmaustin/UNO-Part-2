@@ -17,11 +17,17 @@ namespace Uno_part_2
     /// <summary>
     /// Interaction logic for UNOCard.xaml
     /// </summary>
-    public partial class UNOCard : Window
+    public partial class UNOCard : UserControl
     {
         public UNOCard()
         {
             InitializeComponent();
         }
+
+        public static DependencyProperty ColorProperty = DependencyProperty.Register(
+            "Color",
+            typeof(CardClasses.Color),
+            typeof(CardControl),
+
     }
 }
