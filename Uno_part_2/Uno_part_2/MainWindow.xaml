@@ -29,9 +29,17 @@
                 <Separator Style="{StaticResource MenuItemSeparatorStyle}" />
                 <MenuItem Header="_Close" Style="{StaticResource MainMenuSubMeuItemStyle}" Command="Close" />
             </MenuItem>
-            
-
+            <MenuItem Header="_Game" Style="{StaticResource MainMenuItemStyle}">
+                <MenuItem Header="_Undo" Style="{StaticResource MainMenuSubMenuItemStyle}"/>
+            </MenuItem>
+            <MenuItem Header="_Tools" Style="{StaticResource MainMenuItemStyle}">
+                <MenuItem Header="_Options" Style="{StaticResource MainMenuSubMenuItemStyle}" Command="local:GameOptions.OptionsCommand"/>
+            </MenuItem>
+            <MenuItem Header="Help" Style="{StaticResource MainMenuItemStyle}">
+                <MenuItem Header="_About" Style="{StaticResource MainMenuSubMenuItemStyle}" Command="local:GameViewModel.ShowAboutCommand"/>
+            </MenuItem>
         </Menu>
+        
 
     </Grid>
 </Window>
