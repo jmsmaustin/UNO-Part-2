@@ -9,9 +9,10 @@ namespace CardClasses
     [Serializable]
     public enum PlayerState
     {
-        
+        Inactive,
+        Active,
+        MustDiscard,
         Winner,
-        MustDraw,
-        Loser,
+        Loser
     }
 }
