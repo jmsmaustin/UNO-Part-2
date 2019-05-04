@@ -57,6 +57,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CardsInHandControl.xaml.cs">
+      <DependentUpon>CardsInHandControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameDecksControl.xaml.cs">
+      <DependentUpon>GameDecksControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GameOptions.cs" />
     <Compile Include="GameViewModel.cs" />
     <Compile Include="InversedBoolConverter.cs" />
@@ -64,9 +70,17 @@
     <Compile Include="StartGame.xaml.cs">
       <DependentUpon>StartGame.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UNOCard.xaml.cs">
-      <DependentUpon>UNOCard.xaml</DependentUpon>
+    <Compile Include="UNOCardControl.xaml.cs">
+      <DependentUpon>UNOCardControl.xaml</DependentUpon>
     </Compile>
+    <Page Include="CardsInHandControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameDecksControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,7 +104,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UNOCard.xaml">
+    <Page Include="UNOCardControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,7 +64,7 @@ namespace CardClasses
                 Hand.Add(deck.Draw());
         }
 
-        public bool HasWon => Hand.Count == 7 && Hand.Select(x => x.suit).Distinct().Count() == 1;
+        public bool HasWon => Hand.Count == 7 && Hand.Select(x => x.color).Distinct().Count() == 1;
 
         public Cards GetCards() => Hand.Clone() as Cards;
 

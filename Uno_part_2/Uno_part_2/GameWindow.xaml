@@ -9,13 +9,26 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ControlResources.xaml"
+                <ResourceDictionary Source="ControlResources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
     <Window.CommandBindings>
-        <Command
+        <CommandBinding Command="ApplicationCommands.Close"
+        CanExecute="CommandCanExecute" Executed="CommandExecuted" />
+        <CommandBinding Command="ApplicationCommands.Save" 
+        CanExecute="CommandCanExecute" Executed="CommandExecuted" />
+        <CommandBinding Command="local:GameViewModel.StartGameCommand" 
+CanExecute="CommandCanExecute" Executed="CommandExecuted" />
+        <CommandBinding Command="local:GameViewModel.ShowAboutCommand" 
+CanExecute="CommandCanExecute" Executed="CommandExecuted" />
+        <CommandBinding Command="local:GameOptions.OptionsCommand" 
+CanExecute="CommandCanExecute" Executed="CommandExecuted" />
+
     </Window.CommandBindings>
+    <Window.DataContext >
+        <local:GameViewModel />
+    </Window.DataContext>
     <Grid>
         
     </Grid>
