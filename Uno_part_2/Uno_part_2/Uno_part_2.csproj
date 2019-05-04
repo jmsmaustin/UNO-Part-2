@@ -67,6 +67,9 @@
     <Compile Include="GameViewModel.cs" />
     <Compile Include="InversedBoolConverter.cs" />
     <Compile Include="NoOfPlayers.cs" />
+    <Compile Include="Options.xaml.cs">
+      <DependentUpon>Options.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StartGame.xaml.cs">
       <DependentUpon>StartGame.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StartGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
