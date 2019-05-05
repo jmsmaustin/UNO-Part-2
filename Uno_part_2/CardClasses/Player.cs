@@ -57,7 +57,7 @@ namespace CardClasses
             OnCardDiscarded?.Invoke(this, new CardEventArgs { Card = card });
         }
 
-        public void DrawnewHand (Deck deck)
+        public void DrawNewHand (Deck deck)
         {
             Hand = new Cards();
             for (int i = 0; i < 7; i++)

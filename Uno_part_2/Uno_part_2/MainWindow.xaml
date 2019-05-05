@@ -16,9 +16,9 @@
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Close" CanExecute="CommandCanExecute" Executed="CommandExecuted" />
         <CommandBinding Command="ApplicationCommands.Save" CanExecute="CommandCanExecute" Executed="CommandExecuted" />
-        <CommandBinding Command="local:GameViewModel.StartGameCommand" CanExecute="CommandCanExecute" Executed="CommandExecuted" />
-        <CommandBinding Command="local:GameViewModel.ShowAboutCommand" CanExecute="CommandCanExecute" Executed="CommandExecuted" />
-        <CommandBinding Command="local:GameOptions.OptionsCommand" CanExecute="CommandCanExecute" Executed="CommandExecuted" />
+        <CommandBinding Command="local:GameViewModel.cs.StartGameCommand" CanExecute="CommandCanExecute" Executed="CommandExecuted" />
+        <CommandBinding Command="local:GameViewModel.cs.ShowAboutCommand" CanExecute="CommandCanExecute" Executed="CommandExecuted" />
+        <CommandBinding Command="local:GameOptions.cs.OptionsCommand" CanExecute="CommandCanExecute" Executed="CommandExecuted" />
     </Window.CommandBindings>
     <Window.DataContext >
         <local:GameViewModel />
@@ -38,9 +38,9 @@
                 <MenuItem Header="_New Game" Style="{StaticResource MainMenuSubMenutItemStyle}" Command="local:GameViewModel.StartGameCommand"/>
                 <MenuItem Header="_Open" Style="{StaticResource MainMenuSubMenuItemStyle}"/>
                 <MenuItem Header="_Save" Style="{StaticResource MainMenuSubMenuItemStyle}" Command="Save">
-                    <MenuItem.Icon>
+                    <!--<MenuItem.Icon>
                     <Image Source="Images\base_floppydisk_32.png" Width="20" />
-                    </MenuItem.Icon>
+                    </MenuItem.Icon>-->
                 </MenuItem>
                 <Separator Style="{StaticResource MenuItemSeparatorStyle}" />
                 <MenuItem Header="_Close" Style="{StaticResource MainMenuSubMeuItemStyle}" Command="Close" />

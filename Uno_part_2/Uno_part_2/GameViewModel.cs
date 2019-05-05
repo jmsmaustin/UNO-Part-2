@@ -1,4 +1,5 @@
 ﻿using CardClasses;
+using Uno_part_2;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -12,12 +13,9 @@ namespace Uno_part_2
         private void OnPropertyChanged(string propertyName) =>
     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
-        public static RoutedCommand StartGameCommand =
-new RoutedCommand("Start New Game", typeof(GameViewModel),
-new InputGestureCollection(new List<InputGesture>
-{ new KeyGesture(Key.N, ModifierKeys.Control) }));
-        public static RoutedCommand ShowAboutCommand =
-    new RoutedCommand("Show About Dialog", typeof(GameViewModel));
+        public static RoutedCommand StartGameCommand = new RoutedCommand("Start New Game", typeof(GameViewModel), new InputGestureCollection(new List<InputGesture>
+        { new KeyGesture(Key.N, ModifierKeys.Control) }));
+        public static RoutedCommand ShowAboutCommand = new RoutedCommand("Show About Dialog", typeof(GameViewModel));
 
         public GameViewModel()
         {
@@ -46,9 +44,7 @@ new InputGestureCollection(new List<InputGesture>
 
         public void StartNewGame()
         {
-            if (gameOptions.SelectedPlayers.Count < 1 ||
-      (gameOptions.SelectedPlayers.Count == 1
-      && !gameOptions.PlayAgainstComputer))
+            if (gameOptions.SelectedPlayers.Count < 1 || (gameOptions.SelectedPlayers.Count == 1 && !gameOptions.PlayAgainstComputer))
                 return;
             CreateGameDeck();
             CreatePlayers();
