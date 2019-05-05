@@ -161,9 +161,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Blu e.bmp" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Red.bmp" />
   </ItemGroup>
   <ItemGroup>
