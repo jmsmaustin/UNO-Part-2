@@ -13,9 +13,11 @@
             <RowDefinition />
             <RowDefinition Height="42"/>
         </Grid.RowDefinitions>
-        <Canvas Grid.Row="0" Background="#C40D42" >
+        <Canvas Grid.Row="0" Background="#FF7F91CF" >
             <Image Height="56" Canvas.Left="0" Canvas.Top="0" Stretch="UniformToFill" Source=".\Images\Banner.png"/>
-            <Label Canvas.Right="10" Canvas.Top="13" Content="New Game" Foreground="#FFF7EFEF" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold" />
+            <Label Canvas.Right="10" Canvas.Top="10" Content="New Game" Foreground="#FFF7EFEF" 
+FontFamily="Arial Black" FontSize="24" FontWeight="Bold" Canvas.Left="146" />
+
         </Canvas>
         <Canvas Grid.Row="1" Background="Black" >
 
@@ -34,5 +36,7 @@
               Name="okButton" Click="okButton_Click" IsEnabled="False"/>
 
         </StackPanel>
+
+
     </Grid>
 </Window>

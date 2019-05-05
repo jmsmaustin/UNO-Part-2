@@ -73,6 +73,9 @@
     <Compile Include="StartGame.xaml.cs">
       <DependentUpon>StartGame.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StartGame1.xaml.cs">
+      <DependentUpon>StartGame1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UNOCardControl1.xaml.cs">
       <DependentUpon>UNOCardControl1.xaml</DependentUpon>
     </Compile>
@@ -112,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="StartGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartGame1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

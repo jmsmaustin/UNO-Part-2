@@ -14,7 +14,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml.Serialization;
 
-
 namespace Uno_part_2
 {
     /// <summary>
@@ -27,65 +26,6 @@ namespace Uno_part_2
         public StartGame()
         {
             InitializeComponent();
-            DataContextChanged += StartGame_DataContextChanged;
-        }
-
-        private void ChangeListBoxOptions()
-        {
-            if (gameOptions.PlayAgainstComputer)
-                playerNamesListBox.SelectionMode = SelectionMode.Single;
-            else
-                playerNamesListBox.SelectionMode = SelectionMode.Extended;
-        }
-
-        private void playerNamesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (gameOptions.PlayAgainstComputer)
-                okButton.IsEnabled = (playerNamesListBox.SelectedItems.Count == 1);
-            else
-                okButton.IsEnabled = (playerNamesListBox.SelectedItems.Count == gameOptions.NumberOfPlayers);
-        }
-
-        private void addNewPlayerButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(newPlayerTextBox.Text))
-                gameOptions.AddPlayer(newPlayerTextBox.Text);
-            newPlayerTextBox.Text = string.Empty;
-        }
-
-
-        private void playerNamesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (gameOptions.PlayAgainstComputer)
-                okButton.IsEnabled = (playerNamesListBox.SelectedItems.Count == 1);
-            else
-                okButton.IsEnabled = (playerNamesListBox.SelectedItems.Count == gameOptions.NumberOfPlayers);
-        }
-
-        private void addNewPlayerButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(newPlayerTextBox.Text))
-                gameOptions.AddPlayer(newPlayerTextBox.Text);
-            newPlayerTextBox.Text = string.Empty;
-        }
-
-
-        private void okButton_Click(object sender, RoutedEventArgs e)
-        {
-            var gameOptions = DataContext as GameOptions;
-            gameOptions.SelectedPlayers = new List<string>();
-            foreach (string item in playerNamesListBox.SelectedItems)
-            {
-                gameOptions.SelectedPlayers.Add(item);
-            }
-            this.DialogResult = true;
-            this.Close();
-        }
-
-        private void cancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            gameOptions = null;
-            Close();
         }
     }
 }
