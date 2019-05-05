@@ -73,8 +73,8 @@
     <Compile Include="StartGame.xaml.cs">
       <DependentUpon>StartGame.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UNOCardControl.xaml.cs">
-      <DependentUpon>UNOCardControl.xaml</DependentUpon>
+    <Compile Include="UNOCardControl1.xaml.cs">
+      <DependentUpon>UNOCardControl1.xaml</DependentUpon>
     </Compile>
     <Page Include="CardsInHandControl.xaml">
       <SubType>Designer</SubType>
@@ -115,7 +115,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UNOCardControl.xaml">
+    <Page Include="UNOCardControl1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,6 +152,21 @@
       <Project>{86E7A044-8F94-4301-B698-7C7E3F53F90B}</Project>
       <Name>CardClasses</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Blu e.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Red.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Green.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Yellow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Blue.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

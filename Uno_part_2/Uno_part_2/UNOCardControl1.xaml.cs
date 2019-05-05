@@ -18,9 +18,9 @@ namespace Uno_part_2
     /// <summary>
     /// Interaction logic for UNOCardControl.xaml
     /// </summary>
-    public partial class UNOCardControl : UserControl
+    public partial class UNOCardControl1 : UserControl
     {
-        public UNOCardControl()
+        public UNOCardControl1()
         {
             InitializeComponent();
         }
@@ -28,24 +28,24 @@ namespace Uno_part_2
         public static DependencyProperty ColorProperty = DependencyProperty.Register(
             "Color",
             typeof(CardClasses.Color),
-            typeof(UNOCardControl),
+            typeof(UNOCardControl1),
             new PropertyMetadata(CardClasses.Color.Blue,
             new PropertyChangedCallback(OnColorChanged)));
         public static DependencyProperty RankProperty = DependencyProperty.Register(
             "Rank",
             typeof(CardClasses.Rank),
-            typeof(UNOCardControl),
+            typeof(UNOCardControl1),
             new PropertyMetadata(CardClasses.Rank.DrawTwo));
         public static DependencyProperty IsFaceUpProperty = DependencyProperty.Register(
             "IsFaceUp",
             typeof(bool),
-            typeof(UNOCardControl),
+            typeof(UNOCardControl1),
             new PropertyMetadata(true, new PropertyChangedCallback(OnIsFaceUpChanged)));
 
         public bool IsFaceUp
         {
             get { return (bool)GetValue(IsFaceUpProperty); }
-            set { SetValue.(IsFaceUpProperty, value); }
+            set { SetValue(IsFaceUpProperty, value); }
         }
 
 
@@ -63,13 +63,13 @@ namespace Uno_part_2
 
         public static void OnColorChanged(DependencyObject source, DependencyPropertyChangedEventArgs args)
         {
-            var control = source as UNOCardControl;
+            var control = source as UNOCardControl1;
             control.SetTextColor();
         }
 
         private static void OnIsFaceUpChanged(DependencyObject source, DependencyPropertyChangedEventArgs args)
         {
-            var control = source as UNOCardControl;
+            var control = source as UNOCardControl1;
             control.RankLabel.Visibility = control.ColorLabel.Visibility = control.RankLabelInverted.Visibility = control.IsFaceUp ? Visibility.Visible : Visibility.Hidden;
         }
 
@@ -81,7 +81,7 @@ namespace Uno_part_2
             private set { card = value; Color = card.color; Rank = card.rank; }
         }
 
-        public UNOCardControl(CardClasses.Card card)
+        public UNOCardControl1(CardClasses.Card card)
         {
             InitializeComponent();
             Card = card;
