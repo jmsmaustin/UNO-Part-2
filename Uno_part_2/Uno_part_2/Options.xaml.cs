@@ -1,4 +1,7 @@
-﻿using System.IO;
+﻿//Mitchell & Perri
+//Used the Karli Cards Example from the textbook for reference
+
+using System.IO;
 using System.Windows;
 using System.Xml.Serialization;
 using CardClasses;

@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Mitchell & Perri
+//Used the Karli Cards Example from the textbook for reference
+
+using System;
 using System.Windows.Data;
 
 namespace Uno_part_2

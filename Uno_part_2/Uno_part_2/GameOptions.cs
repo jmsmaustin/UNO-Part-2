@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Mitchell & Perri
+//Used the Karli Cards Example from the textbook for reference
+
+using System;
 using CardClasses;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

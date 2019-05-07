@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Mitchell & Perri
+//Used the Karli Cards Example from the textbook for reference
+// THIS ONE WAS JUST A TEST, DID  NOT WORK PROPERLY
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

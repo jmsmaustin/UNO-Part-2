@@ -60,7 +60,10 @@ namespace CardClasses
         public void DrawNewHand (Deck deck)
         {
             Hand = new Cards();
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 7; i++)//Mitchell & Perri
+                                       //Used the Karli Cards Example from the textbook for reference
+
+
                 Hand.Add(deck.Draw());
         }
 

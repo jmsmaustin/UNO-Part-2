@@ -1,4 +1,8 @@
-﻿using CardClasses;
+﻿//Mitchell & Perri
+//Used the Karli Cards Example from the textbook for reference
+
+
+using CardClasses;
 using Uno_part_2;
 using System.Collections.Generic;
 using System.ComponentModel;
